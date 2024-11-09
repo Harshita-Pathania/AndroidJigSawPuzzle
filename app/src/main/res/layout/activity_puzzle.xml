@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Original Image View (Display before solving the puzzle) -->
+    <ImageView
+        android:id="@+id/originalImageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="fitCenter"/>
+
+    <!-- Puzzle Grid Layout (RecyclerView for puzzle pieces) -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/puzzleRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
