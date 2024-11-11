@@ -5,19 +5,34 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Original Image View (Display before solving the puzzle) -->
     <ImageView
         android:id="@+id/originalImageView"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:layout_marginBottom="16dp"
-        android:scaleType="fitCenter"/>
+        android:scaleType="fitCenter" />
 
-    <!-- Puzzle Grid Layout (RecyclerView for puzzle pieces) -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/puzzleRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:layout_marginTop="16dp" />
+
+
+    <Button
+        android:id="@+id/exitGameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Exit Game" />
+
+    <Button
+        android:id="@+id/backToHomepageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:text="Back to Homepage" />
+
 </LinearLayout>
